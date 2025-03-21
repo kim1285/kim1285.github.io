@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Full Rank Probability of Binary Matrices</h1>
+        </header>
+
+        <section>
+            <h3>Problem Statement</h3>
+            <p>Calculate and visualize the probability that a random binary matrix of size 
+𝑛×𝑚 is full rank, where 
+𝑛 is fixed, and 𝑚 increases from 1 to 5, for a large number of random instances.</p>
+
+            <h3>Solution</h3>
+            <p>Generate random binary matrices for different values of  𝑛×𝑚, compute their rank, and determine the proportion of matrices that are full rank. Visualize the probabilities for each matrix size.</p>
+
+	<h3>Implementation</h3>
+		<ul>
+                <li>Generate random 4 by 𝑚 binary matrix from 𝑚 = 1 to 5.</li>
+                <li>Calculate the proportion of full-rank matrices for each matrix size.</li>
+		<li>plot the result</li>
+         	</ul>
+
+         <h3>Result</h3>
+		<p><img src="../pictures/project6_1.png" alt="project_1_1.png" class="responsive-image">
+<img src="../pictures/project6_2.png" alt="project_1_1.png" class="responsive-image"> As 𝑚 gets closer to 𝑛(4), the probability of a matrix A being full column rank decreases and becomes 0 when 𝑚 gets bigger than 𝑛, because rank r cannot be bigger than 𝑚.
+</p>
+
+	<h3>Lext Steps</h3>
+	<p>Investigate the effect of different matrix dimensions (e.g., non-square matrices) on the rank probability.</p>
+
+		<p><a href="https://github.com/kim1285/math_n_science/blob/main/9_rank_being_less_than_m_in_invertible_A.py">Codebase for the program</a>
+        	</section>
+    </div>
+<a href="../index.html">Back to Main</a>
+</body>
+</html>

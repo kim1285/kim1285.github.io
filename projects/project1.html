@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anomaly Detection</h1>
+        </header>
+
+        <section>
+            <h3>Problem Definition</h3>
+            <p>Manually identifying anomalous entries in a large 2-dimensional dataset is challenging. An automated solution is required.</p>
+
+            <h3>Solution</h3>
+            <p>If a dataset follows a normal distribution, anomalies can be detected using the Probability Density Function (PDF) combined with thresholding to automatically label outliers.</p>
+
+            <h3>Considered Algorithms</h3>
+            <ul>
+                <li>Z-score</li>
+                <li>Interquartile Range (IQR)</li>
+                <li>K-Nearest Neighbors (KNN)</li>
+                <li>Isolation Forest</li>
+                <li>Autoencoders (Neural Networks)</li>
+                <li>Probability Density Function (PDF)</li>
+            </ul>
+            <h3>Selected Method: PDF with Thresholding</h3>
+            <ul>
+                <li>Best suited for small datasets (300 points).</li>
+                <li>Works well with continuous, non-categorical features.</li>
+                <li>Handles normally distributed data efficiently.</li>
+                <li>Simple and interpretable approach.</li>
+            </ul>
+
+            <h2>implementation</h2>
+            <ol>
+                <li>Define the Probability Density Function (PDF).</li>
+                <li>Optimize the threshold for anomaly detection.</li>
+                <li>Implement the solution and visualize the results.</li>
+                <li>Summarize the implementation process.</li>
+            </ol>
+
+            <h3>Results</h3>
+            <ul>
+                <li>Visual representation of detected anomalies.</li>
+                <img src="../pictures/project1_1.png" alt="project_1_1.png" class="responsive-image">
+                <li>The model effectively identifies anomalous entries.</li>
+                <li>Numerical performance metrics.</li>
+            </ul>
+
+            <h3>Limitations</h3>
+            <ul>
+                <li>Optimizing the threshold using the F1-score required some labeled anomaly data.</li>
+                <li>Workarounds include statistical thresholding, quartile-based cutoffs, or KNN-based approaches.</li>
+            </ul>
+<p><a href="https://github.com/kim1285/ml/blob/main/anomaly_detection.py">Codebase for the program</a>
+        </section>
+    </div>
+<a href="../index.html">Back to Main</a>
+</body>
+</html>

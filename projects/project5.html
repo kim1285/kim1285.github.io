@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Anki Workload Calculation</h1>
+        </header>
+
+        <section>
+            <h3>Problem Statement</h3>
+            <p>Calculate and visualize daily Anki flashcard review workload over a set duration, using an exponential distribution to determine workload for each day.</p>
+
+            <h3>Solution</h3>
+            <p>Generate exponential values (powers of 2.5) for specific days, distribute cards accordingly, and visualize the daily workload over time.</p>
+
+	<h3>Implementation</h3>
+		<ul>
+                <li>Initializes an array representing the workload for each day.</li>
+                <li>Populates the array with a fixed number of cards on days where the workload value matches a power of 2.5 (i.e., specific days).</li>
+		<li>Calculates the total workload and then plots the result.</li>
+         	</ul>
+
+         <h3>Result</h3>
+		<p><img src="../pictures/project5_1.png" alt="project_1_1.png" class="responsive-image"><img src="../pictures/project5_2.png" alt="project_1_1.png" class="responsive-image">The script computes the workload for each day and displays the maximum workload. A graph visualizes the changes in workload across 120 days.
+</p>
+
+         <h3>limitations</h3>
+		<p>it’s limited to fixed duration and card values.</p>
+
+	<h3>Lext Steps</h3>
+	<p>Personalization: Adapt the model for individual review patterns.
+Optimization: Improve workload distribution with dynamic adjustments.
+UI/UX: Create an interface for customizable parameters.</p>
+
+		<p><a href="https://github.com/kim1285/anki-workload/blob/main/anki%20workload.py">Codebase for the program</a>
+        	</section>
+    </div>
+<a href="../index.html">Back to Main</a>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Fire detectoin</h1>
+        </header>
+
+        <section>
+            <h3>problem Statement</h3>
+            <p>IR fire detection system is expensive compared to regular fire detection system.
+High-volume-low-margin manufacturing sectors with higher risk of fire probably(...more research needed) doesn't adopt IR fire detection system. Example of those sectors include:
+
+textile & garmet factories, 
+food processing & grain storage, 
+plastic rubber manufacturing.
+
+Computation has become cheaper and there are many foundational models trained to finetune for rudimentary fire detection system to deplay fast and inexpensively.</p>
+
+            <h3>Solution</h3>
+            <p>Inexpensive non-ir camera live fire detection using smaller computer vision model finetuned to detect fire in large manufactoring facilities where smoke alarms are less effective due to the size.
+Fine-tune a lightweight vision classification model using labeled data to predict images containing fire.</p>
+
+	<h3>Implementation</h3>
+                <li>preprocess images</li>
+                <li>split training set</li>
+                <li>train model</li>
+                <li>predict</li>
+            </ul>
+	<p><figure>
+		<img src="../pictures/project2_1.png" alt="project_1_1.png" class="responsive-image">
+			<figcaption>Model is being trained...</figcaption>
+		</figure>
+		<figure><img src="../pictures/project2_4.png" alt="saved model parameters" class="responsive-image">
+			<figcaption>Saved model parmeters</figcaption>
+		</figure>
+		<figure>
+		<img src="../pictures/project2_5.png" alt="image to predict the value" class="responsive-image">
+			<figcaption>Image to predict the fire using model</figcaption>
+		</figure>
+
+</p>
+         <h3>Result</h3>
+		<p>
+	<figure><img src="../pictures/project2_6.png" alt="result" class="responsive-image">
+		<figcaption>It's a success - It's not a fire.</figcaption>
+	</figure>
+Potential Cost Reduction: A fraction of the cost of IR-based fire detection systems.
+Real-time Detection: Faster response compared to smoke alarms in large spaces.
+Scalability: Easily deployable across multiple manufacturing plants with minimal changes.</p>
+
+         <h3>limitations</h3>
+		<p>Only the finetuning part has been completed and the system is not finished 
+Environmental Sensitivity: Accuracy may be affected by lighting, reflections, and smoke dispersion.
+False Positives: Requires ongoing model improvements to distinguish between actual fire and similar visual patterns.
+Computational Constraints: Low-power edge devices may need optimizations for real-time processing.
+Regulatory Compliance: May require certification or approval in fire safety regulations before large-scale adoption.</p>
+
+
+	<h3>Next Steps</h3>
+		<p>
+next steps:
+Finish the system
+Conduct pilot tests in manufacturing plants.
+Further optimize model efficiency and accuracy.
+Enhance system integration with fire suppression and emergency response protocols.</p>
+
+		<p><a href="https://github.com/kim1285/dl">Codebase for the program</a>
+        	</section>
+    </div>
+<a href="../index.html">Back to Main</a>
+</body>
+</html>

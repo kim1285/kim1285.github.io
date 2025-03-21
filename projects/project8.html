@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Practice Problem Progress Tracker</h1>
+        </header>
+
+        <section>
+            <h3>Problem Statement</h3>
+            <p>Manually tracking progress of long mathematics problem session was repetitive and more visual feedback would we encouraging</p>
+
+            <h3>Solution</h3>
+            <p>A script that breaks down a total number of problems into smaller sets. The user can track progress via a progress bar, and it provides control for skipping or advancing problems with keyboard input (Shift+Q to increase the count).</p>
+
+	<h3>Implementation</h3>
+		<ul>
+                <li>The script takes the total number of problems and splits them into specified sessions.</li>
+                <li>A progress bar (tqdm) tracks progress within each session.</li>
+		<li>The user can increase the count in real-time by pressing Shift+Q.</li>
+		<li>The script handles uneven division of problems and ensures the last session has any remaining problems.</li>
+		<li>A prompt ends the process and congratulates the user upon completion.</li>
+         	</ul>
+
+         <h3>Result</h3>
+		<p><img src="../pictures/project8_1.png" alt="project_1_1.png" class="responsive-image">The user can monitor their progress in solving practice problems, and the real-time input allows for quick adjustments to the problem-solving pace.
+</p>
+
+         <h3>limitations</h3>
+		<p>Relies on the keyboard library, which may require administrator privileges. Does not track time spent on each problem, only progress. Requires a physical keyboard and may not work in environments where keyboard events are blocked.</p>
+
+	<h3>Lext Steps</h3>
+	<p>Add a timer to track time spent per session or problem.
+Implement customizable inputs for various problem sets and sessions.
+Create an interface for logging and analyzing performance over time.</p>
+
+		<p><a href="https://github.com/kim1285/problem-solving-progress-bar/blob/main/problem_solving_progress_bar.py">Codebase for the program</a>
+        	</section>
+    </div>
+<a href="../index.html">Back to Main</a>
+</body>
+</html>

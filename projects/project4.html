@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>RegEx Text Data Cleaning Program </h1>
+        </header>
+
+        <section>
+            <h3>Problem Statement</h3>
+            <p>In the context of generating Question and Answer database of governemnt and legal documents, large number of data has to be gathered and cleaned.
+initially scraped government, legal documents contains various patterns or formatting issues, such as numbered lists, special characters, and certain formatting anomalies that need to be cleaned, standardized, or modified for easier readability or consistency.
+</p>
+
+            <h3>Solution</h3>
+            <p>The solution involves using regular expressions (regex) to identify and replace these patterns in the input text. Multiple patterns are defined to capture different formatting issues such as numbered lists, specific symbols, and unnecessary line breaks. Once matched, the script applies a specific transformation to reformat or remove parts of the text.
+
+Key operations include:
+
+Removing or modifying certain patterns.
+Replacing specific character sequences.
+Adjusting the layout of headings, lists, and certain clauses for consistency.
+Handling specific formatting like converting numbers to standard list formats or removing specific tags.</p>
+
+	<h3>Implementation</h3>
+		<ul>
+                <li>Multiple patterns are defined to target specific sections of the text.</li>
+                <li>Using RegEx, for each match, custom replacement functions are applied to transform the text in a particular way.</li>
+		<li>Use pyperclip library to paste the copied text and modify it. The final result is then copied back to the clipboard for easy pasting elsewhere.</li>
+         	</ul>
+
+         <h3>Result</h3>
+		<p><img src="../pictures/project4_1.png" alt="project_1_1.png" class="responsive-image">
+The script cleans the text by removing or altering unnecessary formatting, standardizing lists and clause formatting, and generally cleaning the content. The modified text is then copied to the clipboard for further use or processing.</p>
+
+         <h3>limitations</h3>
+		<p>The script is highly dependent on regex patterns that are hardcoded and may not handle variations in input text outside the defined patterns.
+There is no validation to ensure the input text is correctly formatted before being processed, which could lead to errors or undesired results if the text differs from the expected structure.</p>
+
+	<h3>Lext Steps</h3>
+	<p>Future improvements could include dynamic language support, a user-friendly interface, customizable cleaning patterns, better error handling, and parallel processing. Integration with cloud services, text editors, and advanced features like semantic cleaning and auto-correction would enhance functionality.</p>
+
+		<p><a href="https://github.com/kim1285/RegEx_text_data_cleaning">Codebase for the program</a>
+        	</section>
+    </div>
+<a href="../index.html">Back to Main</a>
+</body>
+</html>
